@@ -1,0 +1,74 @@
+.chat-main-container {
+  height: 100%;
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+
+  & .chat-title-bar {
+    div {
+      text-align: left;
+      font-size: 1.5rem;
+    }
+    button {
+      width: unset;
+      background: none;
+
+      svg {
+        color: #ccc;
+        float: right;
+      }
+    }
+  }
+
+  & .chat-container div {
+    background-color: #ebebeb;
+
+    & .left-chat {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    & .right-chat {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
+
+  & .send-message {
+    margin: 0.5em;
+    border-radius: 5px;
+    padding: 0.3em 0.6em;
+    & div {
+      display: flex;
+      align-items: center;
+
+      & button {
+        width: unset;
+        background: none;
+        svg {
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+//chat component scrollbar
+#chat-container {
+  & div::-webkit-scrollbar-track {
+  }
+
+  & div::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+  }
+
+  & div::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-radius: 10px;
+  }
+}

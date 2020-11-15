@@ -1,0 +1,31 @@
+.pagination{
+  justify-content: center;
+}
+
+.pagination li {
+    padding: 0.5rem 1rem;
+    list-style-type: none;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+li > a {
+    outline: none;
+}
+.pagination li  > a:hover, .pagination li > a:focus {
+    cursor: pointer;
+}
+li.active {
+    background: cornflowerblue;
+    border: none;
+}
+li.active > a {
+    color: #fff;
+}
+.previous, .next {
+    margin: 0 1rem;
+}
+.disabled {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+    
+}

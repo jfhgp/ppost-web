@@ -1,0 +1,81 @@
+// // ._transporterHomeContainer{
+// //     height: 100%;
+// //     display: grid;
+// //     grid-template-columns: repeat(3, 1fr);
+// //     grid-template-rows: repeat(3, 1fr);
+// //     grid-column-gap:2rem;
+// //     grid-row-gap:2rem;
+
+// //         ._recentActivity{
+// //             grid-column: 2/4;
+// //             grid-row: 1/3;
+// //         }
+// // }
+
+
+
+// ._transporterHomeContainer {
+//     height: 100%;
+//     width: 100%;
+//     display: grid;
+//     grid-gap: 1.5rem;
+//     grid-template-areas: 
+//         "_earnings"
+//         "_recentActivity"
+//         "_transporterStatistics"
+//         "_request"
+//         "_promotions"
+//         "_support";
+//             ._earnings{
+//                 grid-area: _earnings
+//             }
+//             ._recentActivity{
+//                 grid-area: _recentActivity
+//             }
+//             ._transporterStatistics{
+//                 grid-area: _transporterStatistics
+//             }
+//             ._request{
+//                 grid-area: _request
+//             }
+//             ._promotions{
+//                 grid-area: _promotions
+//             }
+//             ._support{
+//                 grid-area: _support
+//             }
+// }
+// @media (min-width: 700px) {
+//     ._transporterHomeContainer{
+//         grid-template-columns: 1fr 3fr;
+//         grid-template-areas: 
+//             "_earnings _recentActivity"
+//             "_transporterStatistics _recentActivity"
+//             "_request"
+//             "_promotions"
+//             "_support";
+//     }
+// }
+
+// @media (min-width: 1366px) {
+//     ._transporterHomeContainer{
+//         grid-template-columns: 1fr 1fr 1fr;
+//         grid-template-areas: 
+//             "_earnings _recentActivity _recentActivity"
+//             "_transporterStatistics _recentActivity _recentActivity"
+//             "_request _promotions _support";
+//     }
+// }
+
+
+.t-dashboard-container{
+    background-color: #ebebeb;
+    padding: 2rem;
+    min-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .t-dashboard-container{
+        padding: 1rem 0.5rem;
+    }
+}

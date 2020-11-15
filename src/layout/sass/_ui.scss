@@ -1,0 +1,176 @@
+/* Warning Message */
+.w-message-container {
+  padding: 1em;
+  background-color: rgb(255, 227, 153);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+
+  & > span:first-child {
+    font-size: 2em;
+  }
+
+  & > span:last-child {
+    margin-left: 0.25em;
+  }
+}
+
+/* Empty Placeholder */
+.empty-placeholder {
+  padding: 5rem;
+  text-align: center;
+
+  & > i {
+    font-size: 3rem;
+    color: rgb(170, 170, 170);
+  }
+}
+
+/* Growl */
+.app-growl {
+  z-index: 2000 !important;
+}
+
+/* App Top Bar */
+.app-top-bar {
+  justify-content: space-between;
+  padding: 0px 1.5rem;
+
+  & > button svg {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+  }
+
+  & > div {
+    padding: 0.5rem 0px;
+
+    & > button {
+      display: flex;
+      text-align: right;
+      align-items: center;
+
+      & > span:first-child {
+        & > div {
+          margin-right: 1rem;
+
+          & > div:first-child {
+            text-transform: capitalize;
+            font-weight: bold;
+          }
+
+          & > div:last-child {
+            text-transform: capitalize;
+            font-size: 12px;
+            color: rgb(119, 119, 119);
+          }
+        }
+
+        & > img {
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+        }
+      }
+    }
+
+    & > #app-bar-popper {
+      right: 0px;
+      position: absolute;
+      margin-right: 1rem;
+    }
+  }
+}
+
+/* App Drawer */
+.app-drawer-close {
+  width: 60px !important;
+  & > div {
+    width: inherit !important;
+  }
+}
+
+.drawer-list-item {
+  font-size: 20px;
+  min-width: 1em;
+}
+
+.nav-active > div {
+  background-color: #ff9000 !important;
+}
+
+.app-growl {
+  z-index: 2000 !important;
+}
+
+/* Show on hover */
+.show-on-hover {
+  & > button {
+    display: none;
+  }
+
+  &:hover > button {
+    display: unset;
+  }
+}
+
+// Slider Component
+.slider-component {
+  position: relative;
+
+  & > div:first-child {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1;
+    background: linear-gradient(transparent, rgba(15, 13, 143, 0.9));
+    background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(15, 13, 143, 0.9)),
+      to(transparent)
+    );
+    background: -moz-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(15, 13, 143, 0.9)),
+      to(transparent)
+    );
+    background: -ms-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(15, 13, 143, 0.9)),
+      to(transparent)
+    );
+    background: -o-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(15, 13, 143, 0.9)),
+      to(transparent)
+    );
+  }
+
+  & > div:nth-child(2) {
+    background-size: 100% 100% !important;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .no-padding > div {
+    padding-left: 25px !important;
+  }
+
+  .slider-component {
+    & > div:nth-child(2) {
+      // background-size: auto 100% !important;
+      background-size: cover !important;
+    }
+  }
+}

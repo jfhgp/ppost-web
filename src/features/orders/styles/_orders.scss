@@ -1,0 +1,253 @@
+//
+
+$primary-color: #152972;
+$secondary-color: #fa7816;
+$primary-light: #5c5eb5;
+$bg-color: #ebebeb;
+$title-bg-color: #ccc;
+$disabled-color: #aaa;
+$error-color: #f44336;
+$outline-color: #718ffc;
+
+.color-secondary {
+  color: $secondary-color;
+}
+
+// main container
+.u-r-details-container {
+  @include page-bg();
+
+  & > div:nth-child(2) {
+    & .heading {
+      @include page-heading();
+    }
+
+    & .basic-details-div {
+      border: 1px solid $secondary-color;
+
+      & > div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0.5em 1em;
+        background-color: $title-bg-color;
+
+        & > span {
+          margin: 0.5em 0px;
+          font-size: 1.2em;
+          color: $primary-color;
+        }
+
+        & > span:nth-child(2) {
+          & > span {
+            text-transform: capitalize;
+            color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+
+    .img {
+      cursor: pointer;
+      margin: 0 10px 0 0;
+      margin-top: 2px;
+      height: 40px;
+      width: 40px;
+      border-radius: 5px;
+      border: 1px dashed $outline-color;
+    }
+
+    & .commodities-table {
+      & thead > tr {
+        background: $primary-color;
+        color: #fff;
+        font-family: Exo2-Medium;
+        height: unset;
+
+        & > th {
+          color: inherit;
+          font-size: 1em;
+          border-right: 1px solid #fff;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          &.no-border {
+            border: unset;
+          }
+        }
+      }
+
+      & tbody > tr {
+        background: #ccc;
+        color: $primary-color;
+        border-top: 1px solid #fff;
+        font-family: Exo2-Medium;
+
+        &:first-child {
+          border-top: unset;
+        }
+
+        & > td {
+          color: inherit;
+          border-right: 1px solid #fff;
+          border-bottom: unset;
+
+          &.no-border {
+            border: unset;
+          }
+        }
+      }
+    }
+
+    & .request-details-btn {
+      border: none;
+      outline: none;
+      max-width: 300px;
+      width: 100%;
+      padding: 8px 0px;
+      border-radius: 0px;
+
+      &.disabled {
+        cursor: auto;
+        opacity: 0.3;
+      }
+    }
+  }
+}
+
+.request-details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.transporter-details {
+  & > div:nth-child(2) {
+    & > div:nth-child(2) {
+      & > .subheading-big {
+        & span {
+          margin-left: 0;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
+
+.tracking-details {
+  & > div:not(:first-child) {
+    color: $primary-color;
+    padding: 5px 1em;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(204, 204, 204);
+
+    & > span {
+      text-transform: capitalize;
+    }
+  }
+}
+
+.location-details {
+  margin-top: 2rem;
+  border: 3px solid rgb(255, 255, 255);
+  height: 356px;
+}
+
+.actions-details {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  & > button {
+    margin: 5px 0px;
+  }
+}
+
+.u-r-d-actions-dialog {
+  & > div:last-child > div {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.subheading-big {
+  & > p {
+    margin: 0.5em 0px 0px;
+    color: $primary-color;
+  }
+
+  & > p:nth-child(1) {
+    margin: 0px;
+    font-size: 1.2em;
+    color: $primary-color;
+
+    &.color-secondary {
+      @extend .color-secondary;
+    }
+  }
+  & > div {
+    display: flex;
+    margin: 0.5em 0px 0px;
+    align-items: flex-start;
+
+    & > span {
+      margin-left: 0.75em;
+      color: $primary-color;
+    }
+  }
+}
+
+.subheading {
+  & > p {
+    margin: 0px;
+    color: $primary-color;
+  }
+
+  & > p:nth-child(2) {
+    text-transform: capitalize;
+    margin: 0.5em 0px 0px;
+    color: $primary-color;
+  }
+
+  & > p:nth-child(3) {
+    // line-height: 1em;
+    margin: 0px;
+    color: $primary-color;
+  }
+}
+
+/** BREAKPOINTS **/
+
+@media (max-width: 786px) {
+  .request-details {
+    & > div:nth-child(2) {
+      & > div:nth-child(1) {
+        order: 1;
+      }
+      & > div:nth-child(2) {
+        order: 4;
+      }
+      & > div:nth-child(3) {
+        order: 2;
+
+        & > div > div:first-child > p:nth-child(3) {
+          line-height: unset !important;
+        }
+      }
+      & > div:nth-child(4) {
+        order: 5;
+        & > div > div:first-child > p:nth-child(3) {
+          line-height: unset !important;
+        }
+      }
+      & > div:nth-child(5) {
+        order: 3;
+      }
+      & > div:nth-child(6) {
+        order: 6;
+      }
+    }
+  }
+}

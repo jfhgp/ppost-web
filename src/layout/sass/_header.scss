@@ -1,0 +1,14 @@
+.__navbar{
+    &>a:active{
+        color: $orange !important;
+    }
+    &>a:hover{
+        color: $orange !important;
+    }
+    &>a:focus{
+        color: $orange !important;
+    }
+    .active-link{
+        color: yellow;
+    }
+}

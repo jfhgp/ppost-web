@@ -1,0 +1,428 @@
+/*
+*
+* css for forms
+*/
+
+$primary-color: #152972;
+$color: #afc0ff;
+$error-color: #f44336;
+$outline-color: #718ffc;
+
+.form-input {
+  border: 1px solid $outline-color;
+  border-radius: 4px;
+  font-family: 'Exo2-Medium';
+  display: flex;
+  align-items: center;
+  padding: 3px 1em;
+
+  &.form-error {
+    border-color: $error-color !important;
+  }
+
+  & > img {
+    width: 1.4rem;
+  }
+
+  & > input {
+    margin: 2px;
+    padding: 8px 5px;
+    margin-left: 0.5rem;
+    font-family: 'Exo2-Medium';
+    font-size: 1.2em;
+    color: $color;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    min-width: unset;
+  }
+
+  & > textarea {
+    margin: 2px;
+    padding: 8px 5px;
+    margin-left: 0.5rem;
+    font-family: 'Exo2-Medium';
+    font-size: 1.2em;
+    color: $color;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    min-width: unset;
+  }
+
+  & > input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color;
+    opacity: 1; /* Firefox */
+  }
+
+  & > input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color;
+  }
+
+  & > input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color;
+  }
+
+  & > textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color;
+    opacity: 1; /* Firefox */
+  }
+
+  & > textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color;
+  }
+
+  & > textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color;
+  }
+}
+
+.form-input-s {
+  border: 1px solid $outline-color;
+  border-radius: 4px;
+  font-family: 'Exo2-Medium';
+  display: flex;
+  align-items: center;
+  padding: 3px 1em;
+
+  &.form-error {
+    border-color: $error-color !important;
+  }
+
+  & > img {
+    width: 1.4rem;
+  }
+
+  & > input {
+    margin: 2px;
+    padding: 4px 5px;
+    margin-left: 0.5rem;
+    font-family: 'Exo2-Medium';
+    font-size: 1.2em;
+    color: $primary-color;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    min-width: unset;
+  }
+
+  & > span {
+    font-family: 'Exo2-Medium';
+    font-size: 1.2em;
+    color: $color;
+  }
+
+  & > textarea {
+    margin: 2px;
+    padding: 8px 5px;
+    margin-left: 0.5rem;
+    font-family: 'Exo2-Medium';
+    font-size: 1.2em;
+    color: $primary-color;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    min-width: unset;
+  }
+
+  & > input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color;
+    opacity: 1; /* Firefox */
+  }
+
+  & > input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color;
+  }
+
+  & > input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color;
+  }
+
+  & > textarea::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color;
+    opacity: 1; /* Firefox */
+  }
+
+  & > textarea:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color;
+  }
+
+  & > textarea::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color;
+  }
+}
+
+.form-submit-btn {
+  width: unset;
+  border: none;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  outline: none;
+  background: none !important;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  padding: 0 1rem;
+  line-height: 2rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  background-image: linear-gradient(
+    to right,
+    rgb(250, 120, 22),
+    rgb(250, 178, 22)
+  ) !important;
+
+  &.no-gradient-btn {
+    background-image: none !important;
+  }
+
+  &.disabled {
+    opacity: 0.2;
+    cursor: auto;
+  }
+
+  &.cancel-btn {
+    background-image: linear-gradient(to right, #fa2616, #fb6137) !important;
+  }
+
+  & .form-submit-btn-red {
+    background-image: linear-gradient(
+      to right,
+      rgba(250, 22, 22, 0.904),
+      rgb(250, 120, 22)
+    ) !important;
+  }
+}
+
+.form-search-input {
+  background-color: #ebebeb;
+  border-radius: 8px;
+  font-family: 'Exo2-Medium';
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  height: 100%;
+  padding: 3px 0;
+
+  & > input {
+    min-width: unset;
+    margin: 2px;
+    margin-left: 1em;
+    font-family: 'Exo2-Medium';
+    font-size: 1.2em;
+    color: #a1a1a1;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+  & > img {
+    padding: 0 15px;
+    width: 50px;
+  }
+
+  & > input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a1a1a1;
+    opacity: 1; /* Firefox */
+  }
+
+  & > input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #a1a1a1;
+  }
+
+  & > input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #a1a1a1;
+  }
+}
+
+.form-select-input-field {
+  border: 1px solid $outline-color;
+  border-radius: 4px;
+  font-family: 'Exo2-Medium';
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+
+  &.form-error {
+    border-color: $error-color !important;
+  }
+
+  & > img {
+    width: 1.4rem;
+  }
+
+  & > div > div:first-child > div:first-child > div:first-child {
+    font-size: 1.2em;
+  }
+
+  & > select {
+    margin: 2px;
+    padding: 8px 5px;
+    font-family: 'Exo2-Medium';
+    font-size: 1.5em;
+    margin-left: 0.5em;
+    color: $primary-color;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding-right: 2rem;
+
+    background-image: url('../static/icons/icon-dropdown.png');
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 50%;
+
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -o-appearance: none !important;
+  }
+
+  & > input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $color;
+    opacity: 1; /* Firefox */
+  }
+
+  & > input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $color;
+  }
+
+  & > input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $color;
+  }
+}
+
+.form-select-input {
+  background-color: #ebebeb;
+  border-radius: 8px;
+  font-family: 'Exo2-Medium';
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  &.form-select-input-error {
+    border-color: #fc7171 !important;
+  }
+
+  & > select {
+    margin: 2px;
+    padding: 4px 5px;
+    font-family: 'Exo2-Medium';
+    font-size: 1.2em;
+    color: #a1a1a1;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding-right: 2rem;
+
+    background-image: url('../static/icons/icon-dropdown.png');
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 50%;
+
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    -o-appearance: none !important;
+  }
+
+  & > input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a1a1a1;
+    opacity: 1; /* Firefox */
+  }
+
+  & > input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #a1a1a1;
+  }
+
+  & > input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #a1a1a1;
+  }
+}
+
+// Form Checkbox Label Input
+.form-checkbox-label-input {
+  margin-right: 0 !important;
+
+  & > span:first-child > span > svg {
+    color: $outline-color !important;
+
+    & + input {
+      min-width: unset;
+    }
+  }
+  & > span:last-child {
+    font-family: Exo2-Medium;
+    font-size: 1.2em;
+    line-height: unset;
+    color: $color;
+  }
+}
+
+// Pickup Dropoff Input Div
+.pickup-dropoff-input-div {
+  border: 1px solid $outline-color;
+  border-radius: 4px;
+  font-family: 'Exo2-Medium';
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  cursor: pointer;
+
+  &.form-error {
+    border-color: $error-color !important;
+
+    & > span {
+      // color: $error-color;
+    }
+  }
+
+  & + small {
+    color: $error-color;
+    font-family: Exo2-Medium;
+  }
+
+  & > img {
+    width: 1.4rem;
+  }
+
+  & > span {
+    margin: 2px;
+    padding: 8px 5px;
+    // margin-left: 0.5rem;
+    font-family: 'Exo2-Medium';
+    font-size: 1.2em;
+    color: $primary-color;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    min-width: unset;
+  }
+}

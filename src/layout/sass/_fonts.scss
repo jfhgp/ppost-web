@@ -1,0 +1,107 @@
+/**
+*
+* create fonts
+*/
+
+@font-face {
+  font-family: 'Exo2-Medium';
+  src: local('Exo2-Medium'), url(../static/fonts/Exo2-Medium.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Exo2-Light';
+  src: local('Exo2-Light'), url(../static/fonts/Exo2-Light.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Exo2-Bold';
+  src: local('Exo2-Bold'), url(../static/fonts/Exo2-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: local('NotoSans-Regular'), url(../static/fonts/NotoSansFontFamily/NotoSans-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: local('NotoSans-Bold'), url(../static/fonts/NotoSansFontFamily/NotoSans-Bold.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+// breakpoint variables
+$xs: 480px;
+$sm: 640px;
+$md: 1024px;
+$lg: 1170px;
+$xlg: 1500px;
+$xllg: 1800px;
+$start: 0;
+$end: false;
+
+$font-sizes: (
+  $start: 16px,
+  $xs: 16px,
+  $sm: 16px,
+  $md: 16px,
+  $lg: 16px,
+  $xlg: 16px,
+  $xllg: 16px,
+  $end: 0
+);
+@mixin breakpoint($mq01: 0, $mq2: false, $maxmin: max-width) {
+  @if $mq2 == false {
+    @media ($maxmin: $mq01) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $mq01) and (max-width: $mq2) {
+      @content;
+    }
+  }
+}
+
+@mixin font-size-map($map) {
+  $keys: map-keys($map);
+  @for $var from 1 to length($keys) {
+    $d: null;
+    @if $var < length($keys) {
+      $d: nth($keys, $var + 1);
+    }
+    $c: nth($keys, $var);
+
+    @if $c == null {
+      //
+    } @else {
+      $maxmin: max-width;
+      @if $var < length($keys) {
+        $maxmin: min-width;
+      }
+
+      @include breakpoint($c, $d, $maxmin) {
+        font-size: map-get($map, $c);
+      }
+    }
+  }
+}
+
+body {
+  // @include font-size-map($font-sizes);
+}
+
+// Parcel Detail
+.parcel-details {
+  & p {
+    line-height: 1.8;
+
+    @include font-size-map($font-sizes);
+  }
+}

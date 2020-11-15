@@ -1,0 +1,101 @@
+button.btn-google {
+  color: #fff;
+}
+.btn {
+  padding: 10px 16px;
+  margin: 5px;
+  font-size: 18px;
+  line-height: 1.3333333;
+  border-radius: 6px;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+
+  text-decoration: none;
+  display: inline-block;
+}
+// .btn:active:focus,.btn:focus{
+//     outline:0
+// }
+// .btn:focus,.btn:hover{
+//     text-decoration:none;
+//     outline:0
+// }
+// .btn:active{
+//     outline:0;
+//     -webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,.125);
+//     box-shadow:inset 0 3px 5px rgba(0,0,0,.125)
+// }
+.btn-google {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #f1f1f1;
+  padding: 15px 16px 5px 40px;
+  position: relative;
+}
+// .btn-google:focus{
+//     color:#fff;
+//     border-color:#000
+// }
+.btn-google:active,
+.btn-google:hover {
+  color: #fff;
+  border-color: #f1f1f1;
+}
+.btn-google:before {
+  content: '';
+  background-image: url('/assets/images/icon/Googleplay-Appicon.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 30px;
+  background-size: cover;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -15px;
+}
+.btn-apple {
+  color: #fff;
+  background: transparent;
+  border: 1px solid #f1f1f1;
+  padding: 15px 16px 5px 40px;
+  position: relative;
+}
+.btn-apple:before {
+  content: '';
+  color: 'white';
+  // background-image: url(https://www.iconsdb.com/icons/preview/white/apple-xxl.png);
+  background-image: url('/assets/images/icon/Apple-AppIcon.png');
+  width: 25px;
+  height: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  margin-top: -15px;
+}
+.btn-apple:after {
+  content: 'Download From';
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  font-size: 10px;
+}
+.btn-google:after {
+  content: 'GET IT ON';
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  font-size: 10px;
+}

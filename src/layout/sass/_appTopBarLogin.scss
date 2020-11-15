@@ -1,0 +1,92 @@
+ .login-navbar {
+           width: 100%;
+        }
+
+        .login-main-nav {
+            list-style-type: none;
+            display: none;
+            padding: 0;
+            color: #fff;
+            border-top: 1px solid #a59f9f47;
+        }
+
+        .nav-links
+        {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 1);
+        }
+
+        .login-main-nav li {
+            margin: 10px auto;
+        }
+
+        .login-navbar-toggle {
+            position: absolute;
+            top: 72px;
+            right:30px;
+            cursor: pointer;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 24px;
+        }
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .login-navbar {
+                display: flex;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .login-main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content:space-between;
+                border: none;
+                width:100%;
+                & > div {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    & > li {
+                        margin: 0
+                    }
+                }
+
+                & > :last-child{
+                    border: 1px solid #fff;
+                    padding: 10px;
+                    border-radius: 3px;
+                    color: white;
+                    padding: 10px 2rem;
+                    margin: 0;
+                    & > a {
+                        margin: 0;
+                    }
+                }
+            }
+
+          
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .login-navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(255, 255, 255, 0.8);
+            }
+        }

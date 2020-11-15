@@ -1,0 +1,48 @@
+// ._userHomeContainer {
+//     height: 100vh;
+//     width: 100%;
+//     display: grid;
+//     grid-gap: 1.5rem;
+//       grid-template-areas: 
+//         "_myRequest"
+//         "_customerStatistics"
+//         "_recentActivity"
+//         "_request"
+//         "_promotions"
+//         "_support";
+
+//             ._myRequest{
+//                 grid-area: _myRequest
+//             }
+//             ._customerStatistics{
+//                 grid-area: _customerStatistics
+//             }
+//             ._recentActivity{
+//                 grid-area: _recentActivity
+//             }
+//             ._promotions{
+//                 grid-area: _promotions
+//             }
+//             ._support{
+//                 grid-area: _support
+//             }
+//     }
+
+// @media (min-width: 500px){
+//     ._userHomeContainer{
+        
+//     }
+// }
+
+
+.u-dashboard-container{
+    background-color: #ebebeb;
+    padding: 2rem;
+    min-height: 100%;
+}
+
+@media (max-width: 768px) {
+    .u-dashboard-container{
+        padding: 1rem 0.5rem;
+    }
+}

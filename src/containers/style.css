@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+main {
+  align-items: center;
+  min-height: 500px;
+}
+
+input {
+  /* min-width: 250px; */
+}
+
+centered-half {
+  width: "50%";
+  background-color: "red";
+  align-self: "center";
+  align-items: "center";
+  justify-content: "center";
+  display: "flex";
+  margin-bottom: 10px;
+}
+
+p-inputgroup .login {
+  margin-bottom: 20px;
+}

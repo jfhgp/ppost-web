@@ -1,0 +1,71 @@
+.mobileRoot {
+  max-width: 1366px;
+  text-align: center;
+  height: auto;
+  width: 100%;
+  background-color: #ebebeb;
+  padding: 50px 0;
+
+  ._heading {
+    font-size: 3rem;
+  }
+  hr {
+    margin-bottom: 35px;
+  }
+
+  .flexContainer {
+    display: flex;
+    align-items: stretch;
+
+    .flexContainerDiv {
+      color: #fff;
+      padding: 0px 20px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+      flex-grow: 1;
+    }
+    .flexContainerDiv > div > div > h4 {
+      padding: 5px;
+      font-size: 1.9rem;
+      color: $blue;
+    }
+    .flexContainerDiv > div > div > p {
+      padding: 5px;
+      margin-bottom: 5px;
+      color: #606060;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileRoot {
+    text-align: center;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    .flexContainer {
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+
+      .flexContainerDiv {
+        color: #fff;
+        padding: 0px 10px;
+        text-align: center;
+        line-height: 75px;
+        font-size: 30px;
+        flex-grow: 1;
+
+        div {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+$fontSize: 14px;
+$bodyBgColor: #edf0f5;
+$textColor: #333333;
+$textSecondaryColor: #707070;
+$borderRadius: 3px;
+$dividerColor: #e3e3e3;
+$transitionDuration: 0.2s;
+$maskBgColor: #424242;
+
+$scrollPanelBgColor: #aaaaaa;
+$menuitemBadgeBgColor: #007be5;
+$menuitemBadgeColor: #ffffff;
+$submenuFontSize: 13px;
+
+$menuDarkBgColorFirst: #4d505b;
+$menuDarkBgColorLast: #3b3e47;
+$menuitemDarkColor: #ffffff;
+$menuitemDarkHoverColor: #0388e5;
+$menuitemDarkActiveColor: #0388e5;
+$menuitemDarkActiveBgColor: #2e3035;
+$menuitemDarkBorderColor: rgba(52, 56, 65, 0.6);
+
+$menuBgColorFirst: #f3f4f9;
+$menuBgColorLast: #d7dbe8;
+$menuitemColor: #232428;
+$menuitemHoverColor: #0388e5;
+$menuitemActiveColor: #0388e5;
+$menuitemActiveBgColor: #ffffff;
+$menuitemBorderColor: rgba(207, 211, 224, 0.6);
+
+$topbarLeftBgColor: #0388e5;
+$topbarRightBgColor: #07bdf4;
+$topbarItemBadgeBgColor: #ef6262;
+$topbarItemBadgeColor: #ffffff;
+$topbarItemColor: #ffffff;
+$topbarItemHoverColor: #77c7ff;
+$topbarSearchInputBorderBottomColor: #ffffff;
+$topbarSearchInputColor: #ffffff;
+
+$footerBgColor: #ffffff;
+
+/* app colors */
+$orange: #fa7816;
+$blue: #152972;
+$orangeToTop: linear-gradient(to top,  #fa7816 0%,#fab216 100%);
+$orangeToBottom: linear-gradient(to bottom,  #fa7816 0%,#fab216 100%);
+$orangeToRight: linear-gradient(to right,  #fa7816 0%,#fab216 100%);
+$orangeToLeft: linear-gradient(to left,  #fa7816 0%,#fab216 100%);
+$blueToTop: linear-gradient(to top,  #152972 0%,#60a1ee 99%);
+$blueToBottom: linear-gradient(to bottom,  #152972 0%,#60a1ee 99%);
+$blueToRight: linear-gradient(to right,  #152972 0%,#60a1ee 99%);
+$blueToLeft: linear-gradient(to left,  #152972 0%,#60a1ee 99%);
+
+
+
+@import "./sass/_layout";
